@@ -7,8 +7,12 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
+protocol GetNameStringDelegate {
+    func GetNameStringFunction(customerStr : String)
+}
+class ViewController: UIViewController,GetNameStringDelegate {
+    
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+   
+    @IBAction func eventClicked(sender: AnyObject) {
+        let ccRTVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Demo") as! DemoViewController
+       ccRTVC.delegate = self
+        self.navigationController?.pushViewController(ccRTVC, animated: true)
+    }
+    func GetNameStringFunction(customerStr : String){
+        print(customerStr)
+    }
 }
 
