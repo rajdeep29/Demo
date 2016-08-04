@@ -7,8 +7,10 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
+protocol GetStringDelegate {
+    func GetStringFunction(name : String)
+}
+class ViewController: UIViewController, GetStringDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func clickEvenet(sender: AnyObject) {
+        // Main
+        let demoVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("demoID") as!  DemoViewController
+           demoVC.demoDelegate = self
+            self.navigationController?.pushViewController(demoVC, animated: true)
+    }
+    
+    func GetStringFunction(name : String){
+        print("Name---> \(name)")
+    }
+    
 }
 

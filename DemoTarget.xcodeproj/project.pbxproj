@@ -25,6 +25,7 @@
 		3F88EB571CF6ED1500238EE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F88EB471CF6ED0900238EE4 /* LaunchScreen.storyboard */; };
 		3F88EB581CF6ED1500238EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F88EB451CF6ED0900238EE4 /* Assets.xcassets */; };
 		3F88EB591CF6ED1500238EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F88EB3F1CF6ED0900238EE4 /* Main.storyboard */; };
+		3F94BD551D531FC8009E4E80 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94BD541D531FC8009E4E80 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		3F88EB4A1CF6ED0900238EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F88EB5D1CF6ED1500238EE4 /* Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88EB5E1CF6ED1600238EE4 /* DevInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DevInfo.plist; path = /Users/rajdeep/Desktop/DemoTarget/DevInfo.plist; sourceTree = "<absolute>"; };
+		3F94BD541D531FC8009E4E80 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3F88EB471CF6ED0900238EE4 /* LaunchScreen.storyboard */,
 				3F0462F91CFDAFF6006A39DB /* Supporting Files */,
 				3F88EB421CF6ED0900238EE4 /* DemoTarget.xcdatamodeld */,
+				3F94BD541D531FC8009E4E80 /* DemoViewController.swift */,
 			);
 			path = DemoTarget;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				3F88EB441CF6ED0900238EE4 /* DemoTarget.xcdatamodeld in Sources */,
 				3F88EB3E1CF6ED0900238EE4 /* ViewController.swift in Sources */,
 				3F88EB3C1CF6ED0900238EE4 /* AppDelegate.swift in Sources */,
+				3F94BD551D531FC8009E4E80 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
