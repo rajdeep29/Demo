@@ -22,6 +22,7 @@ class ViewController: UIViewController {
                 print("== \(names)")
             }
         }
+        //hot fixed fixed
         // Do any additional setup after loading the view, typically from a nib.
 
     }
