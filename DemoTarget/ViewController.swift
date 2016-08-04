@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        print("heelo")
         for family: String in UIFont.familyNames()
         {
             print("\(family)")
